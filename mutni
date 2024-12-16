@@ -1,0 +1,308 @@
+<!-- GALERIJA HTML -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerija</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigacija -->
+        <ul class="meni">
+            <li><a href="pocetna.html">Početna</a></li>
+            <li><a href="galerija.html" class="active">Galerija</a></li>
+            <li><a href="registracija.html">Registracija</a></li>
+        </ul>
+        <!-- Tijelo stranice -->
+        <div class="tijelo">
+            <h1>Ponuda vozila</h1>
+            <table class="galerija" align="center">
+                <tr>
+                    <td><img src="./galerija/Slika1.jpg" alt="Vozilo 1" title="Vozilo 1"></td>
+                    <td><img src="./galerija/Slika2.jpg" alt="Vozilo 2" title="Vozilo 2"></td>
+                    <td><img src="./galerija/Slika3.jpg" alt="Vozilo 3" title="Vozilo 3"></td>
+                    <td><img src="./galerija/Slika4.jpg" alt="Vozilo 4" title="Vozilo 4"></td>
+                </tr>
+                <tr>
+                    <td><img src="./galerija/Slika5.jpg" alt="Vozilo 5" title="Vozilo 5"></td>
+                    <td><img src="./galerija/Slika6.jpg" alt="Vozilo 6" title="Vozilo 6"></td>
+                    <td><img src="./galerija/Slika7.jpg" alt="Vozilo 7" title="Vozilo 7"></td>
+                    <td><img src="./galerija/Slika8.jpg" alt="Vozilo 8" title="Vozilo 8"></td>
+                </tr>
+                <tr>
+                    <td><img src="./galerija/Slika9.jpg" alt="Vozilo 9" title="Vozilo 9"></td>
+                    <td><img src="./galerija/Slika10.jpg" alt="Vozilo 10" title="Vozilo 10"></td>
+                    <td><img src="./galerija/Slika11.jpg" alt="Vozilo 11" title="Vozilo 11"></td>
+                    <td><img src="./galerija/Slika12.jpg" alt="Vozilo 12" title="Vozilo 12"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!-- POCETNA HTML -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Početna</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="pocetnaslika"></div>
+        <ul class="meni">
+            <li><a href="pocetna.html" class="active">Početna</a></li>
+            <li><a href="galerija.html">Galerija</a></li>
+            <li><a href="registracija.html">Registracija</a></li>
+        </ul>
+        <div class="tijelo">
+            <h1>Dobrodošli na našu web stranicu!</h1>
+            <p>Ova stranica je kreirana prema uputstvu za kolokvij.</p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!-- REGISTRACIJA -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registracija</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigacija -->
+        <ul class="meni">
+            <li><a href="pocetna.html">Početna</a></li>
+            <li><a href="galerija.html">Galerija</a></li>
+            <li><a href="registracija.html" class="active">Registracija</a></li>
+        </ul>
+        <!-- Formular za registraciju -->
+        <div class="tijelo">
+            <h1>Registracija</h1>
+            <form action="mailto:tfb@unbi.ba" method="post" enctype="text/plain">
+                <div class="divbody">
+                    <label for="username">Korisničko ime:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="divbody">
+                    <label for="password">Lozinka:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="divbody">
+                    <label for="confirm_password">Potvrda lozinke:</label>
+                    <input type="password" id="confirm_password" name="confirm_password" required>
+                </div>
+                <div class="divbody">
+                    <label for="accept_terms">
+                        <input type="checkbox" id="accept_terms" name="accept_terms" required>
+                        Prihvatam uslove
+                    </label>
+                </div>
+                <div class="divbody">
+                    <a href="pdf_document.pdf" target="_blank">USLOVIMA</a> <!-- Link za PDF dokument -->
+                </div>
+                <div class="divbody">
+                    <button type="submit" class="registerbtn">Registruj se</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+CSS
+/* Opća pravila za tijelo stranice */
+body {
+    background-color: #f0f0f2;
+    margin: 0;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Kontejner za sve stranice */
+.container {
+    background-color: white;
+    padding: 16px;
+}
+
+/* Navigacija (meni) */
+ul.meni {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    text-align: center;
+}
+
+ul.meni li {
+    display: inline-block;
+}
+
+ul.meni li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.meni li a:hover:not(.active) {
+    background-color: #111;
+}
+
+ul.meni li a.active {
+    background-color: #4CAF50;
+}
+
+/* Stil za galeriju */
+.galerija {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 slike po redu */
+    gap: 20px; /* Razmak između slika */
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.galerija img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover efekat na slike u galeriji */
+.galerija img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Prikazivanje teksta na hoveru */
+.galerija img:hover::after {
+    content: attr(title);
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 14px;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+/* Stil za tijelo stranice u galeriji i početnoj */
+.tijelo {
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* Formular za registraciju */
+.tijelo form {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.divbody {
+    margin: 10px 0;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button.registerbtn {
+    width: 100%;
+    padding: 16px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.9;
+    transition: opacity 0.3s;
+}
+
+button.registerbtn:hover {
+    opacity: 1;
+}
+
+/* Stilizacija linka za uslove */
+a {
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Dodavanje stila za ulazne forme na početnoj stranici */
+input[type="text"]:focus, input[type="password"]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* CSS za horizontalnu liniju */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+
